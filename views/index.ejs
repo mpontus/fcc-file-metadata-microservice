@@ -41,13 +41,13 @@
      });
 
      function disableInput(input) {
-       $(this).attr('disabled', true);
-       $(this).parents('btn').addClass('disabled');
+       $(input).attr('disabled', true);
+       $(input).parents('.btn').addClass('disabled');
      }
 
      function enableInput(input) {
-       $(this).attr('disabled', false);
-       $(this).parents('btn').removeClass('disabled');
+       $(input).attr('disabled', false);
+       $(input).parents('.btn').removeClass('disabled');
      }
     </script>
   </body>
