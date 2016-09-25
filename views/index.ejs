@@ -33,9 +33,8 @@
          contentType: false
        }).done(function(data) {
          $('p').text('The size of uploaded file is '+data.size+' bytes.');
-       }).fail(function(data) {
+       }).fail(function() {
          $('p').text('An error occured while processing your request.');
-         console.error(data);
        }).always(function () {
          enableInput(element);
        })
